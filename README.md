@@ -1,0 +1,2 @@
+# concetrador
+Concentrado de pagos
