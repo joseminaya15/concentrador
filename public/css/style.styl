@@ -1,0 +1,164 @@
+$color       = #F42129
+$light       = 'RobotoLight'
+$lightItalic = 'RobotoLightItalic'
+$regular     = 'RobotoRegular'
+$bold        = 'RobotoBold'
+$medium      = 'RobotoMedium'
+body
+    color #000000
+    font-family $regular
+flexCenter()
+	display flex
+	display -webkit-flex
+	align-items center
+flexStart()
+	display flex
+	display -webkit-flex
+	align-items flex-start
+transition(css-name)
+	-webkit-transition css-name .25s linear
+	-moz-transition css-name .25s linear
+	-ms-transition css-name .25s linear
+	-o-transition css-name .25s linear
+	transition css-name .25s linear
+.text-left
+    text-align left
+.text-right
+    text-align right
+p 
+    margin 0
+    font-family $light
+h2
+    font-weight 100
+.jm-modal
+    .jm-card
+        flexStart()
+        justify-content flex-start
+        width 100%
+        overflow hidden
+        border 1px solid #ededed
+        border-radius 10px
+        width 100%
+        max-width 640px
+        height 400px
+        .jm-card__left
+            width 100%
+            max-width 70px
+            height 100%
+            background-color $color
+            color #FFFFFF
+            text-align center
+            padding 20px 0
+        .jm-card__right
+            width 100%
+            padding 20px
+            h2
+                color #232323
+                margin 5px 0
+                font-size 18px
+                line-height 20px
+            p
+                color #5b5b5b
+                font-size 14px
+            .jm-logo
+                border-right 2px solid $color
+                margin-left auto
+                text-align right
+                width 100%
+                max-width 200px
+                padding 0 10px
+                h2
+                    color $color
+                    font-size size
+                    margin 0
+                p
+                    color #535353
+                    font-size 14px
+                    line-height 16px
+            .jm-datos
+                p
+                    font-family $lightItalic
+            .jm-tipo--pago
+                margin-top 20px
+                .jm-tipo
+                    p
+                        font-family $light
+            .jm-monto
+                width 100%
+                max-width 400px
+                text-align right
+                margin-left auto
+                h2
+                    color #5b5b5b
+                    font-size 16px
+                    font-family $medium
+                    span 
+                        font-size 36px
+                        line-height 38px
+                        color $color
+                        font-family $bold
+                button
+                    margin-top 15px
+.jm-button
+    background-color #0098B0
+    color #FFFFFF
+    border-radius 5px
+    border none
+    font-size 12px
+    padding 12px 20px
+    outline none
+.jm-button--icon
+    background-color transparent
+    border-radius 50%
+    border 2px solid #FFFFFF
+    outline none
+    color #FFFFFF
+    width 30px
+    height 30px
+input[type='radio']
+    &:checked
+        &:after
+            border 4px solid $color
+            content ''
+            display inline-block
+            width 5px
+            height 5px
+            border-radius 50%
+            background-color #FFFFFF
+.modal
+    display none 
+    z-index 1050
+    position fixed
+    top 0
+    left 0
+    right 0
+    bottom 0
+    &.open
+        display block
+        .jm-modal--dialog
+            -webkit-transform translate(0,0)
+            -moz-transform translate(0,0)
+            -ms-transform translate(0,0)
+            -o-transform translate(0,0)
+            transform translate(0,0)
+    .fade
+        .jm-modal--dialog
+            transition(transform)
+            transform translate(0,25%)
+    .jm-modal--dialog
+        max-width 500px
+        margin 20px auto
+        .jm-modal--content
+            background-color #FFFFFF
+.jm-modal--backdrop
+    transition(opacity)
+    position fixed
+    top 0
+    left 0
+    right 0
+    bottom 0
+    background-color #000000
+    z-index 1040
+    opacity 0
+    &.show
+        opacity .5

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="public/fonts/roboto.css" />
+    <link rel="stylesheet" type="text/css" href="public/css/jesus.css" />
+    <link rel="stylesheet" type="text/css" href="public/css/style4.css" />
+</head>
+<body>
+    <section class="jm-container">
+        <div class="jm-concentrador">
+            <h3>Seleccionar tu m&eacute;todo de pago</h3>
+            <div class="jm-medio--pago">
+                <div class="jm-medio__icon">
+                    <img src="public/img/logo/credit.png"/>
+                </div>
+                <div class="jm-medio__contenido">
+                    <h2>Tarjeta de crédito o débito</h2>
+                    <div class="jm-medio">
+                        <div class="jm-tipo">
+                            <input type="radio" id="visa" class="jm-radio" name="medio" value="visa" checked/>
+                            <label for="visa"><img src="public/img/logo/visa.png" alt=""></label>
+                        </div>
+                        <div class="jm-tipo">
+                            <input type="radio" id="mastercard" class="jm-radio" name="medio" value="mastercard"/>
+                            <label for="mastercard"><img src="public/img/logo/mastercard.png" alt=""></label>
+                        </div>
+                        <div class="jm-tipo">
+                            <input type="radio" id="paypal" class="jm-radio" name="medio" value="paypal"/>
+                            <label for="paypal"><img src="public/img/logo/america-express.png" alt=""></label>
+                        </div>
+                        <div class="jm-tipo">
+                            <input type="radio" id="mercadopago" class="jm-radio" name="medio" value="mercadopago"/>
+                            <label for="mercadopago"><img src="public/img/logo/dinners.png" alt=""></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="jm-medio--pago">
+                <div class="jm-medio__icon">
+                    <img src="public/img/logo/icon.png"/>
+                </div>
+                <div class="jm-medio__contenido">
+                    <h2>Cargo en recibo</h2>
+                    <p>Tu compra se cobrará en tu próximo recibo</p>
+                </div>
+            </div>
+            <div class="jm-medio--pago">
+                <div class="jm-medio__icon">
+                    <img src="public/img/logo/mobile.png"/>
+                </div>
+                <div class="jm-medio__contenido">
+                    <h2>Saldo prepago</h2>
+                    <p>Tienes un saldo de: <span>S/.14.00</span></p>
+                </div>
+            </div>
+            <div class="jm-medio--pago">
+                <div class="jm-medio__icon">
+                    <img src="public/img/logo/club.png"/>
+                </div>
+                <div class="jm-medio__contenido">
+                    <h2>Claro Puntos</h2>
+                    <p>Tienes <span>129</span> Claro puntos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="public/js/jmpago.js"></script>
+    <script src="https://apice.vnforapps.com/api.ecommerce/api/v1/ecommerce/token/515776502"></script>
+    <script src="https://static-content.vnforapps.com/v2/js/checkout.js"></script>
+    <script src="https://apice.vnforapps.com/api.authorization/api/v1/authorization/web/515776502"></script>
+</body>
+</html>
